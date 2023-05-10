@@ -208,7 +208,7 @@ for waixunhuan in range(1000):
         # PosSum_rated[np.isinf(PosSum_rated)] = 0
         # temptk = np.zeros((comunitycount, k))
 
-        time_start = time.time()
+        # time_start = time.time()
         for j in range(traincount):
             currentuser = train_rating[j, 0]-1
             currentitem = train_rating[j, 1]-1
@@ -329,9 +329,9 @@ for waixunhuan in range(1000):
         MAE = s / testcount
         RMSE = sqrt(total / testcount)
         print('Iteration %d,the MAE of testdata is %f, the RMSE of testdata is %f\n' % (ttt, MAE, RMSE))
-        time_end = time.time()
-        time_c= time_end - time_start   #运行所花时间
-        print('time cost', time_c, 's')
+        # time_end = time.time()
+        # time_c= time_end - time_start   #运行所花时间
+        # print('time cost', time_c, 's')
 
 
         # community matrix
@@ -557,7 +557,3 @@ def Recall_1(UI_matrix_predict, userCount, testratings, N):
 
     return resfinal
 
-
-#
-# if __name__ == '__main__':
-#     1
